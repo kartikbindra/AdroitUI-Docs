@@ -13,15 +13,16 @@ const config = {
   favicon: 'img/adroitUI-whitebg1.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://kartikbindra.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/adroit-ui/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'AdroitUI', // Usually your GitHub org/user name.
   projectName: 'AdroitUI', // Usually your repo name.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -88,7 +89,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/category/get-started',
               },
             ],
           },
@@ -113,10 +114,6 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/facebook/docusaurus',
               },
@@ -125,12 +122,15 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Adroit UI`,
       },
+      onBrokenLinks: 'ignore',
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
         additionalLanguages: ['powershell'],
       },
-    }),
+      plugins: [
+          '@docusaurus/plugin-content-pages',
+    ]}),
 };
 
 export default config;
