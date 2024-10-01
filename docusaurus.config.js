@@ -130,7 +130,12 @@ const config = {
       },
       plugins: [
           '@docusaurus/plugin-content-pages',
-    ]}),
+    ],
+
+    deploymentBranch: 'gh-pages',
+    useSSH: true,
+  
+  }),
 };
 
 export default config;
