@@ -37,6 +37,7 @@ function Accordion() {
 </TabItem>
 </Tabs>
 
+## Props
 | Props | Values |
 |-------|--------|
 | title | `string` |

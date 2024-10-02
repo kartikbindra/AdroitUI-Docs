@@ -241,6 +241,7 @@ function Button() {
 </TabItem>
 </Tabs>
 
+## Props
 | Props | Values |
 |-------|--------|
 | Variants | `'solid-primary'` `'solid-secondary'` `'solid-destructive'` `'neutral-primary'` `'neutral-secondary'` `'oultine-primary'` `'outline-neutral'` `'outline-destructive'` |
